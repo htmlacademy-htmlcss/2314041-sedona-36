@@ -3,25 +3,25 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-cale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img class="header-logo" src="/svg/logo.svg" alt="Логотип">
+        <img class="header-logo" src="img/svg/logo.svg" alt="Логотип">
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="">Главная</a>
+              <a class="navigation-link" href="#">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="">О Седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
@@ -43,10 +43,8 @@
       </header>
 
       <main class="main">
-        <img class="main-background" src="/img/index-background.jpg" alt="Виды Седоны">
-        <img class="main-text-welcome" src="/svg/welcome.svg" alt="">
-        <img class="main-text-gogeous" src="/svg/gogeous.svg" alt="">
-        <img class="main-text-sedona" src="/svg/sedona.svg" alt="">
+        <img class="main-background" src="img/index-background.jpg" alt="Виды Седоны">
+        <img class="main-text-welcome" src="img/svg/welcome.svg" alt="Приветствующий текст">
         <section class="introduce">
           <h2>Седона — небольшой городок в Аризоне,
             заслуживающий большего!</h2>
@@ -79,17 +77,14 @@
           <P>Опытный персонал и качественное обслуживание!</P>
           <ul class="benefits-list">
             <li class="benefits-item">
-              <img class="benefits-icon" src="/svg/house.svg" alt="">
               <h3 class="benefits-title">Жильё</h3>
               <p class="benefits-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="benefits-item-list">
-              <img class="benefits-icon" src="/svg/burger.svg" alt="">
+            <li class="benefits-item">
               <h3 class="benefits-title">Еда</h3>
               <p class="benefits-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="benefits-item-list">
-              <img class="benefits-icon" src="/svg/house.svg" alt="">
+            <li class="benefits-item">
               <h3 class="benefits-title">Сувениры</h3>
               <p class="benefits-text">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -98,33 +93,34 @@
         <section class="hotel">
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="hotel-link" href="">Поиск гостинницы в Седоне</a>
+          <a class="hotel-link" href="#">Поиск гостинницы в Седоне</a>
         </section>
         <section class="subscribtion">
           <h2>Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form action="#" class="newsletter" method="post">
+            <input class="field" type="email" placeholder="Ваш e-mail">
+            <button class="newsletter-button" type="submit">Подписаться</button>
+          </form>
         </section>
       </main>
       <footer class="page-footer">
         <ul class="media">
           <li class="media-vk">
-            <a class="media-link" href="">
-              <img class="media-icon" src="/svg/IconVK.svg" alt="Вконтакте">
+            <a class="media-link" href="#">
             </a>
           </li>
           <li class="media-tg">
-            <a class="media-link" href="">
-              <img class="media-icon" src="/svg/IconTelegram.svg" alt="Телеграм">
+            <a class="media-link" href="#">
             </a>
           </li>
           <li class="media-yt">
-            <a class="media-link" href="">
-              <img class="media-icon" src="/svg/IconYoutube.svg" alt="Ютуб">
+            <a class="media-link" href="#">
             </a>
           </li>
         </ul>
-        <p class="phone">+7 (812) 812-12-12</p>
-        <img class="academy" src="/svg/HTML Academy.svg" alt="">
+        <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
+        <a href="#" class="academy-link"></a>
       </footer>
     </div>
   </body>

@@ -12,12 +12,64 @@
   font-style: normal;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: 'PT Sans', sans-serif;
   background-color: #f2f2f2;
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   background-color: #fff;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 64px;
+}
+
+.header-logo {
+  padding-left: 70px;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation-list {
+  list-style: none;
+  padding-left: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.navigation-item {
+  margin-right: 32px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.navigation-link {
+  color: #000;
+}
+
+.underline {
+  border-bottom: 2px solid #756257;
+  padding-bottom: 21px;
 }

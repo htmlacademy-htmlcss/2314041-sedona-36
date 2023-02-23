@@ -12,11 +12,11 @@
   <body>
     <div class="container">
       <header class="header">
-        <img class="header-logo" src="img/svg/logo.svg" alt="Логотип" width="140px" height="70px">
+        <img class="header-logo" src="img/svg/logo.svg" alt="Логотип" width="140" height="70">
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link underline" href="#">Главная</a>
+              <a class="navigation-link active" href="#">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -26,18 +26,18 @@
             </li>
           </ul>
           <ul class="navigation-user">
-            <li class="navigation-item">
-              <span class="visually-hidden">
-                <a class="navigation-link" href="#">Поиск</a>
-              </span>
+            <li class="navigation-user-item">
+              <a class="navigation-link search" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
             </li>
-            <li class="navigation-item">
-              <span class="visually-hidden">
-                <a class="navigation-link" href="#">Избранное</a>
-              </span>
+            <li class="navigation-user-item">
+              <a class="navigation-link heart" href="#">
+                <span class="visually-hidden">Избранное</span>
+              </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда</a>
+            <li class="navigation-user-item">
+              <a class="navigation-link button-header" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -52,23 +52,29 @@
           <ul class="introduce-list">
             <li class="introduce-item">
               <h3 class="introduce-title">Настоящий городок</h3>
-              <span class="introduce-line"></span>
               <p class="introduce-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </li>
             <li class="introduce-item">
-              <h3 class="introduce-title">Настоящий городок</h3>
-              <span class="introduce-line"></span>
-              <p class="introduce-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <img src="/img/content-city.jpg" alt="">
             </li>
             <li class="introduce-item">
-              <h3 class="introduce-title">Настоящий городок</h3>
-              <span class="introduce-line"></span>
-              <p class="introduce-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <h3 class="introduce-title">Небольшая площадь</h3>
+              <p class="introduce-text">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="introduce-item">
-              <h3 class="introduce-title">Настоящий городок</h3>
-              <span class="introduce-line"></span>
-              <p class="introduce-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <h3 class="introduce-title">Красивая дорога</h3>
+              <p class="introduce-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="introduce-item">
+              <h3 class="introduce-title">Мало туристов</h3>
+              <p class="introduce-text">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+            <li class="introduce-item">
+              <img src="/img/content-lands.jpg" alt="">
+            </li>
+            <li class="introduce-item">
+              <h3 class="introduce-title">Там есть мост дьявола</h3>
+              <p class="introduce-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </li>
           </ul>
         </section>
@@ -91,8 +97,9 @@
           </ul>
         </section>
         <section class="hotel">
-          <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <h2 class="hotel-title">Заинтересовались?</h2>
+          <p class="hotel-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+            Седоне</p>
           <a class="hotel-link" href="#">Поиск гостинницы в Седоне</a>
         </section>
         <section class="subscribtion">
@@ -108,19 +115,24 @@
         <ul class="media">
           <li class="media-vk">
             <a class="media-link" href="#">
+              <spapn class="visually-hidden">Вконтакте</spapn>
             </a>
           </li>
           <li class="media-tg">
             <a class="media-link" href="#">
+              <spapn class="visually-hidden">Телеграм</spapn>
             </a>
           </li>
           <li class="media-yt">
             <a class="media-link" href="#">
+              <spapn class="visually-hidden">Ютуб</spapn>
             </a>
           </li>
         </ul>
         <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
-        <a href="#" class="academy-link"></a>
+        <a href="#" class="academy-link">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </footer>
     </div>
   </body>

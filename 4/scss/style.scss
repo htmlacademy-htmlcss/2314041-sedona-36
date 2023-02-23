@@ -21,7 +21,7 @@ body {
 	max-width: 1200px;
   margin: auto;
 	background-color: #fff;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 //Header
 header {
@@ -69,11 +69,11 @@ header {
 }
 .search {
   visibility: visible;
-  background: url(/img/svg/search.svg) no-repeat;
+  background: url(../img/svg/search.svg) no-repeat;
 }
 .heart{
   visibility: visible;
-  background: url(/img/svg/heart.svg) no-repeat;
+  background: url(../img/svg/heart.svg) no-repeat;
 }
 .button-header{
   background: #756157;
@@ -92,7 +92,7 @@ header {
 .main {
   max-height: 100%;
   align-items: center;
-  background: url(/img/index-bg.png) no-repeat;
+  background: url(../img/index-bg.png) no-repeat;
 }
 h2{
   font-weight: 700;
@@ -182,15 +182,15 @@ h3{
   width: 400px;
   height: 385px;
   &:nth-child(1){
-    background: rgba(131, 179, 211, 0.12) url(/img/svg/house.svg) no-repeat;
+    background: rgba(131, 179, 211, 0.12) url(../img/svg/house.svg) no-repeat;
     background-position: 50% 25%;
   }
   &:nth-child(2){
-    background: url(/img/svg/burger.svg) no-repeat;
+    background: url(../img/svg/burger.svg) no-repeat;
     background-position: 50% 25%;
   }
   &:nth-child(3){
-    background: rgba(131, 179, 211, 0.12) url(/img/svg/present.svg) no-repeat;
+    background: rgba(131, 179, 211, 0.12) url(../img/svg/present.svg) no-repeat;
     background-position: 50% 25%;
   }
 }
@@ -245,7 +245,7 @@ h3{
   width: 452px;
   height: 52px;
   background: #F2F2F2;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   border-style: hidden;
   font-size: 18px;
   line-height: 24px;
@@ -255,7 +255,7 @@ h3{
 .newsletter-button {
   height: 52px;
   background: #82B3D3;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   border-style: hidden;
   font-weight: 700;
   font-size: 20px;
@@ -279,15 +279,15 @@ h3{
   margin: 0;
 }
 .media-vk {
-  background: url(/img/svg/vkicon.svg) no-repeat;
+  background: url(../img/svg/vkicon.svg) no-repeat;
 }
 .media-link {
 }
 .media-tg {
-  background: url(/img/svg/tgicon.svg) no-repeat;
+  background: url(../img/svg/tgicon.svg) no-repeat;
 }
 .media-yt {
-  background: url(/img/svg/yticon.svg) no-repeat;
+  background: url(../img/svg/yticon.svg) no-repeat;
 }
 .phone {
   list-style: none;
@@ -298,5 +298,5 @@ h3{
 }
 .academy-link {
   padding-left: 70.1px    ;
-  background: url(/img/svg/html-academy-icon.svg) no-repeat;
+  background: url(../img/svg/html-academy-icon.svg) no-repeat;
 }

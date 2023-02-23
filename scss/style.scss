@@ -4,105 +4,78 @@
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
-
 a {
   text-decoration: none;
 }
-
 body {
   font-family: 'PT Sans', sans-serif;
-  background-color: #f2f2f2;
+	background-color: #f2f2f2;
 }
-
 .container {
-  max-width: 1200px;
+	max-width: 1200px;
   margin: auto;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
-
+//Header
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-height: 64px;
 }
-
 .header-logo {
   padding-left: 70px;
 }
-
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .navigation-list {
   list-style: none;
   padding-left: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .navigation-user {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
   padding-left: 214px;
 }
-
 .navigation-item {
   margin-right: 32px;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
 }
-
-.navigation-user-item {
+.navigation-user-item{
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
 }
-
 .navigation-link {
   color: #000;
 }
-
 .active {
   border-bottom: 2px solid #756257;
   padding-bottom: 21px;
 }
-
 .visually-hidden {
   visibility: hidden;
   position: relative;
 }
-
 .search {
   visibility: visible;
   background: url(/img/svg/search.svg) no-repeat;
 }
-
-.heart {
+.heart{
   visibility: visible;
   background: url(/img/svg/heart.svg) no-repeat;
 }
-
-.button-header {
+.button-header{
   background: #756157;
   border-radius: 4px;
   font-size: 16px;
@@ -111,16 +84,14 @@ header {
   color: white;
   padding: 8px 34px;
 }
+//Main
+.main-text-welcome{
 
-.main-text-welcome {
   margin: 51.4px 371px 82.23px 372.3px;
 }
-
 .main {
   max-width: 1200px;
   max-height: 485px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-image: url(/img/index-bg.png);
 }

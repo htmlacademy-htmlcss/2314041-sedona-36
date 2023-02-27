@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="css/catalog.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <a class="mine-page-link" href="index.html">
-          <img class="header-logo" src="img/svg/logo.svg" alt="Логотип" width="140" height="70">
-        </a>
+        <img class="header-logo" src="img/svg/logo.svg" alt="Логотип" width="140" height="70">
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -22,22 +21,22 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Гостиницы</a>
+              <a class="navigation-link active" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
-            <li class="navigation-item">
-              <span class="visually-hidden">
-                <a class="navigation-link" href="#">Поиск</a>
-              </span>
+            <li class="navigation-user-item">
+              <a class="navigation-link search" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
             </li>
-            <li class="navigation-item">
-              <span class="visually-hidden">
-                <a class="navigation-link" href="#">Избранное</a>
-              </span>
+            <li class="navigation-user-item">
+              <a class="navigation-link heart" href="#">
+                <span class="visually-hidden">Избранное</span>
+              </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда</a>
+            <li class="navigation-user-item">
+              <a class="navigation-link button-header" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -47,10 +46,10 @@
         <header class="inner-header">
           <h1>Гостиницы Седоны</h1>
           <ul class="breadcumbs">
-            <li class="breadcumbs-item">
-              <a href="index.html" class="breadcumbs-link"></a>
+            <li class="breadcumbs-item home">
+              <a href="index.html" class="breadcumbs-link"><span class="visually-hidden">На главную</span></a>
             </li>
-            <li class="breadcumbs-item">
+            <li class="breadcumbs-item hotels">
               <a href="#" class="breadcumbs-link">Гостиницы</a>
             </li>
           </ul>
@@ -78,7 +77,7 @@
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-legend">Тип Жилья::</legend>
+              <legend class="catalog-filter-legend">Тип Жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -100,17 +99,19 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-legend">Стоимость, ₽:</legend>
               <label>
-                <input type="number" name="min-cost" min="0" max="9999" value="0">
+                <input class="typefield-from" type="number" name="min-cost" min="0" max="9999" value="0">
               </label>
               <label>
-                <input type="number" name="max-cost" min="1" max="10000" value="9000">
+                <input class="typefield-to" type="number" name="max-cost" min="1" max="10000" value="9000">
               </label>
             </fieldset>
-            <button class="apply" type="submit">Применить</button>
-            <button class="refresh" type="reset">Сбросить</button>
+            <div class="buttons">
+              <button class="apply" type="submit">Применить</button>
+              <button class="refresh" type="reset">Сбросить</button>
+            </div>
           </form>
           <div class="sort">
-            <p class="search">Найдено гостиниц: 38</p>
+            <p class="search-result">Найдено гостиниц: 38</p>
             <select class="select-controls" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
@@ -175,36 +176,41 @@
             <a href="#" class="pagination-link">...</a>
             <a href="#" class="pagination-link">10</a>
           </section>
-          <section class="subscribtion">
-            <h2>Подпишитесь на рассылку</h2>
-            <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form action="#" class="newsletter" method="post">
-              <input class="field" type="email" placeholder="Ваш e-mail">
-              <button class="newsletter-button" type="submit">Подписаться</button>
-            </form>
-          </section>
         </section>
-
+        <section class="subscription">
+          <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+          <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form action="#" class="newsletter" method="post">
+            <input class="field" type="email" placeholder="Ваш e-mail">
+            <button class="newsletter-button" type="submit">Подписаться</button>
+          </form>
+        </section>
       </main>
 
       <footer class="page-footer">
         <ul class="media">
           <li class="media-vk">
             <a class="media-link" href="#">
+              <spapn class="visually-hidden">Вконтакте</spapn>
             </a>
           </li>
           <li class="media-tg">
             <a class="media-link" href="#">
+              <spapn class="visually-hidden">Телеграм</spapn>
             </a>
           </li>
           <li class="media-yt">
             <a class="media-link" href="#">
+              <spapn class="visually-hidden">Ютуб</spapn>
             </a>
           </li>
         </ul>
         <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
-        <a href="#" class="academy-link"></a>
+        <a href="#" class="academy-link">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </footer>
+    </div>
   </body>
 
 </html>

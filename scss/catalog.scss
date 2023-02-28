@@ -75,6 +75,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 .visually-hidden {
   visibility: hidden;
   position: relative;
+  overflow: hidden;
 }
 .search {
   visibility: visible;
@@ -95,8 +96,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 //--------------------------Main
 .main-inner {
+}
+.filter-section {
+  min-height: 400px;
   padding: 0 70px;
   background: url(../img/catalog-background.png) no-repeat;
+  margin-bottom: 50px;
 }
 .inner-header {
   text-align: left;
@@ -134,7 +139,6 @@ h1 {
 }
 .catalog-filter {
   min-height: 200px;
-  margin-bottom: 120px;
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -211,34 +215,98 @@ h1 {
   padding: 8px 50px;
 }
 .sort {
+  padding: 0 70px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
-.search {
+.search-result {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 .select-controls {
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 14px 100px 20px 14px;
+  font-style: inherit;
 }
 .button-small {
+
+  line-height: 50px;
+  background: url(../img/svg/small-view.svg) no-repeat;
 }
 .button-big {
+  line-height: 50px;
+  background: url(../img/svg/big-view.svg) no-repeat;
 }
 .button-list {
+  line-height: 50px;
+  background: url(../img/svg/list-view.svg) no-repeat;
 }
+
 .catalog {
+  margin: 0px 70px 0px 70px;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  grid-template-rows: 438px 438px;
+  gap: 20px;
 }
 .catalog-card {
+  padding: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  column-gap: 20px;
+  row-gap: 16px;
 }
 .catalog-card-link {
+  grid-column: 1 / -1;
+}
+.catalog-card-title {
+  grid-column: 1 / -1;
+  text-align-last: left;
 }
 .catalog-card-img {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 .catalog-card-type {
+  text-align: left;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 .catalog-type-price {
+  text-align: right;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 .catalog-card-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
 }
 .info {
+  background: #756157;
+  color: #ffffff;
+  padding: 8px 26px;
 }
 .favorite {
+  background: #82B3D3;
+  color: #ffffff;
+  padding: 8px 20px;
+}
+.raiting-info {
+  background: #F2F2F2;
+  color: #333333;
+  padding: 8px 20px;
 }
 .pagination {
 }

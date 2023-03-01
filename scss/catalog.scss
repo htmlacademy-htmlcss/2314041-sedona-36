@@ -180,7 +180,7 @@ h1 {
 .typefield-from{
   padding: 12px 20px 12px 20px;
   background: #F2F2F2;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   border: none;
   font-weight: 700;
   font-size: 18px;
@@ -189,7 +189,7 @@ h1 {
 .typefield-to{
   padding: 12px 20px 12px 20px;
   background: #F2F2F2;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   border: none;
   font-weight: 700;
   font-size: 18px;
@@ -264,7 +264,7 @@ h1 {
 }
 
 .catalog {
-  margin: 0px 70px 40px 70px;
+  margin: 0 70px 40px 70px;
   display: grid;
   grid-template-columns: 340px 340px 340px;
   grid-template-rows: 438px 438px;
@@ -289,7 +289,7 @@ h1 {
   text-align-last: left;
 }
 .catalog-card-img {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 .catalog-card-type {
   text-align: left;

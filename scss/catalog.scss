@@ -36,23 +36,23 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   display: flex;
   max-height: 64px;
   align-items: center;
+  margin: 0 70px;
 }
 .header-logo {
-  padding-left: 70px;
 }
 .navigation {
   display: flex;
   justify-content: space-between;
+  margin-left: 30px;
+  gap: 295px;
 }
 .navigation-list {
   list-style: none;
-  padding-left: 44px;
   display: flex;
 }
 .navigation-user {
   display: flex;
   list-style: none;
-  padding-left: 214px;
 }
 .navigation-item {
   margin-right: 32px;
@@ -61,9 +61,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   line-height: 24px;
 }
 .navigation-user-item {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
 }
 .navigation-link {
   color: #000;
@@ -73,19 +70,31 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   padding-bottom: 21px;
 }
 .visually-hidden {
-  visibility: hidden;
-  position: relative;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 .search {
-  visibility: visible;
+  width: 20px;
+  height: 20px;
+  margin-right: 25px;
+  display: inline-block;
   background: url(../img/svg/search.svg) no-repeat;
 }
 .heart{
-  visibility: visible;
+  width: 20px;
+  height: 20px;
+  margin-right: 33px;
+  display: inline-block;
   background: url(../img/svg/heart.svg) no-repeat;
 }
 .button-header {
+  font-weight: 700;
   background: #756157;
   border-radius: 4px;
   font-size: 16px;
@@ -215,7 +224,7 @@ h1 {
   padding: 8px 50px;
 }
 .sort {
-  padding: 0 70px;
+  margin: 0 70px;
   display: flex;
   align-items: center;
   margin-bottom: 40px;
@@ -227,6 +236,7 @@ h1 {
   text-transform: uppercase;
 }
 .select-controls {
+  margin-left: 200px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   font-size: 18px;
@@ -235,25 +245,32 @@ h1 {
   font-style: inherit;
 }
 .button-small {
-
-  line-height: 50px;
+  margin-left: 44px;
+  width: 48px;
+  height: 48px;
   background: url(../img/svg/small-view.svg) no-repeat;
 }
 .button-big {
-  line-height: 50px;
+  margin-left: 8px;
+  width: 48px;
+  height: 48px;
   background: url(../img/svg/big-view.svg) no-repeat;
 }
 .button-list {
-  line-height: 50px;
+  margin-left: 8px;
+  width: 48px;
+  height: 48px;
   background: url(../img/svg/list-view.svg) no-repeat;
 }
 
 .catalog {
-  margin: 0px 70px 0px 70px;
+  margin: 0px 70px 40px 70px;
   display: grid;
   grid-template-columns: 340px 340px 340px;
   grid-template-rows: 438px 438px;
   gap: 20px;
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 40px;
 }
 .catalog-card {
   padding: 20px;
@@ -309,8 +326,42 @@ h1 {
   padding: 8px 20px;
 }
 .pagination {
+  text-align: left;
+  margin: 0 70px 60px 70px;
+
+  :nth-child(1) {
+    background: #F2F2F2;
+    color: #000000;
+  }
+  :nth-child(2) {
+    background: #82B3D3;
+  }
+  :nth-child(3) {
+    background: #82B3D3;
+  }
+  :nth-child(4) {
+    background: #82B3D3;
+  }
+  :nth-child(5) {
+    color: #000000;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  :last-child {
+    background: #82B3D3;
+  }
 }
 .pagination-link {
+
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
 }
 
 .subscription {
@@ -363,7 +414,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   line-height: 50px;
-  padding: 0 70px;
+  margin: 0 70px;
 }
 .media {
   display: flex;
@@ -373,14 +424,20 @@ h1 {
   min-width: 70px;
 }
 .media-vk {
+  width: 50px;
+  height: 40px;
   background: 50% url(../img/svg/vkicon.svg) no-repeat;
 }
 .media-link {
 }
 .media-tg {
+  width: 50px;
+  height: 40px;
   background: 50% url(../img/svg/tgicon.svg) no-repeat;
 }
 .media-yt {
+  width: 50px;
+  height: 40px;
   background: 50% url(../img/svg/yticon.svg) no-repeat;
 }
 .phone {
@@ -389,7 +446,7 @@ h1 {
   font-size: 40px;
 }
 .academy-link {
-  line-height: 50px;
-  padding-left: 70px;
+  width: 115px;
+  height: 33px;
   background: url(../img/svg/html-academy-icon.svg) no-repeat;
 }

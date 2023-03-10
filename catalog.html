@@ -243,6 +243,52 @@
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal">
+          <button class="modal-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-content-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="date-wrapper">
+                <label class="date-form">
+                  Дата Заезда:
+                  <input class="form-typefield" type="text" id="arrival-date" name="arrival-date"
+                    placeholder="27 апреля 2020">
+                </label>
+                <p class="tip mistake">Мы не можем отправить вас в прошлое.</p>
+                <label class="date-form">
+                  Дата Выезда:
+                  <input class="form-typefield" type="text" id="departure-date" name="departure-date"
+                    placeholder="1 сентября 2023">
+                </label>
+                <p class="tip fine">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+              <div class="qt-ty-wrapper">
+                <label class="q-ty-form">
+                  Взрослые:
+                  <input class="form-number adults" type="number" name="amount" min="0" max="10" placeholder="2">
+                </label>
+                <label class="q-ty-form">
+                  Дети:
+                  <span class="tooltip">
+                    <a class="tooltip-toggle">
+                      <img class="tooltip-icon" src="img/svg/notice.svg" alt="Информация." height="20" width="20">
+                    </a>
+                    <span class="tooltip-text">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                      размещаются бесплатно.
+                    </span>
+                  </span>
+                  <input class="form-number children" type="number" name="amount" min="0" max="10" placeholder="2">
+                </label>
+              </div>
+              <button type="submit" class="form-submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 

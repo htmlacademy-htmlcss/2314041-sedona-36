@@ -13,10 +13,6 @@
   font-style: normal;
 }
 
-a {
-  text-decoration: none;
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -83,6 +79,7 @@ body {
 }
 
 .navigation-link {
+  text-decoration: none;
   color: #000000;
   outline: none;
 }
@@ -376,6 +373,7 @@ body {
 }
 
 .hotel-link {
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
@@ -611,6 +609,7 @@ body {
 }
 
 .phone {
+  text-decoration: none;
   list-style: none;
   color: #000000;
   font-size: 40px;
@@ -630,6 +629,7 @@ body {
 }
 
 .academy-link {
+  text-decoration: none;
   width: 115px;
   height: 33px;
   background: url(../img/svg/html-academy-icon.svg) no-repeat;
@@ -714,6 +714,7 @@ body {
 }
 
 .breadcumbs-link {
+  text-decoration: none;
   display: inline-block;
   color: #FFFFFF;
 }
@@ -1201,6 +1202,7 @@ body {
 }
 
 .catalog-card-link {
+  text-decoration: none;
   grid-column: 1 / -1;
   height: 212px;
 }
@@ -1239,6 +1241,7 @@ body {
 }
 
 .catalog-card-button {
+  text-decoration: none;
   margin: 0;
   font-weight: 700;
   font-size: 16px;
@@ -1352,6 +1355,7 @@ body {
 }
 
 .pagination-link {
+  text-decoration: none;
   outline: none;
   display: -webkit-box;
   display: -ms-flexbox;

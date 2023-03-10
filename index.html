@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,7 +12,7 @@
   <body>
     <div class="container">
       <header class="header">
-        <img class="header-logo" src="img/svg/logo.svg" alt="Логотип" width="140" height="70">
+        <img class="header-logo" src="img/svg/logo.svg" alt="Логотип." width="140" height="70">
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -41,10 +42,10 @@
           </ul>
         </nav>
       </header>
-
       <main class="main">
+        <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <section class="main-background">
-          <img class="main-background-welcome" src="img/svg/welcome.svg" alt="Приветствующий текст" width="458"
+          <img class="main-background-welcome" src="img/svg/welcome.svg" alt="Приветствующий текст." width="458"
             height="352">
         </section>
         <section class="introduce">
@@ -57,22 +58,22 @@
               <p class="introduce-list-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </li>
             <li class="introduce-list-item">
-              <img src="img/content-city.jpg" alt="Город Седоны" width="800" height="384">
+              <img src="img/content-city.jpg" alt="Город Седоны." width="800" height="384">
             </li>
             <li class="introduce-list-item">
-              <h3 class="introduce-list-title">Небольшая площадь</h3>
+              <h3 class="introduce-list-title black">Небольшая площадь</h3>
               <p class="introduce-list-text">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="introduce-list-item">
-              <h3 class="introduce-list-title">Красивая дорога</h3>
+              <h3 class="introduce-list-title black">Красивая дорога</h3>
               <p class="introduce-list-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="introduce-list-item">
-              <h3 class="introduce-list-title">Мало туристов</h3>
+              <h3 class="introduce-list-title black">Мало туристов</h3>
               <p class="introduce-list-text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="introduce-list-item">
-              <img src="img/content-lands.jpg" alt="Мост Дьявола" width="800" height="384">
+              <img src="img/content-lands.jpg" alt="Мост Дьявола." width="800" height="384">
             </li>
             <li class="introduce-list-item">
               <h3 class="introduce-list-title">Там есть мост дьявола</h3>
@@ -85,14 +86,17 @@
           <P class="benefits-text">Опытный персонал и качественное обслуживание!</P>
           <ul class="benefits-list">
             <li class="benefits-list-item">
+              <img class="benefits-list-image" src="img/svg/house.svg" alt="Жильё." width="75" height="72">
               <h3 class="benefits-list-title">Жильё</h3>
               <p class="benefits-list-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="benefits-list-item">
+              <img class="benefits-list-image" src="img/svg/burger.svg" alt="Еда." width="75" height="72">
               <h3 class="benefits-list-title">Еда</h3>
               <p class="benefits-list-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="benefits-list-item">
+              <img class="benefits-list-image" src="img/svg/present.svg" alt="Сувениры." width="75" height="72">
               <h3 class="benefits-list-title">Сувениры</h3>
               <p class="benefits-list-text">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -107,8 +111,10 @@
         <section class="subscription">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form action="#" class="newsletter" method="post">
-            <input class="field" type="email" placeholder="Ваш e-mail">
+          <form class="newsletter" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="newsletter-field">
+              <input class="field" type="email" placeholder="Ваш e-mail">
+            </label>
             <button class="newsletter-button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -116,26 +122,78 @@
       <footer class="page-footer">
         <ul class="media">
           <li class="media-vk">
-            <a class="media-link" href="#">
+            <a class="media-link" href="https://vk.com/htmlacademy">
+              <img src="img/svg/vk-icon.svg" alt="Вконтакте." class="link-icon" width="50" height="40">
               <spapn class="visually-hidden">Вконтакте</spapn>
             </a>
           </li>
           <li class="media-tg">
-            <a class="media-link" href="#">
+            <a class="media-link" href="https://t.me/htmlacademy">
+              <img src="img/svg/tg-icon.svg" alt="Телеграм." class="link-icon" width="50" height="40">
               <spapn class="visually-hidden">Телеграм</spapn>
             </a>
           </li>
           <li class="media-yt">
-            <a class="media-link" href="#">
+            <a class="media-link" href="https://www.youtube.com/user/htmlacademyru">
+              <img src="img/svg/yt-icon.svg" alt="Ютуб." class="link-icon" width="50" height="40">
               <spapn class="visually-hidden">Ютуб</spapn>
             </a>
           </li>
         </ul>
         <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
-        <a href="#" class="academy-link">
+        <a href=" https://htmlacademy.ru/" class="academy-link">
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal">
+          <button class="modal-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-content-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="date-form">
+                <p class="form-text">Дата Заезда:</p>
+                <div class="input-wrapper">
+                  <input class="form-typefield" type="text" id="arrival-date" name="arrival-date"
+                    placeholder="27 апреля 2020">
+                  <p class="tip mistake">Мы не можем отправить вас в прошлое.</p>
+                </div>
+              </label>
+              <label class="date-form">
+                <p class="form-text">Дата Выезда:</p>
+                <div class="input-wrapper">
+                  <input class="form-typefield" type="text" id="departure-date" name="departure-date"
+                    placeholder="1 сентября 2023">
+                  <p class="tip fine">На эти даты есть свободные номера. Пока есть.</p>
+                </div>
+              </label>
+              <div class="lable-wrapper">
+                <label class="q-ty-form">
+                  <p class="form-text">Взрослые:</p>
+                  <input class="form-number adults" type="number" name="amount" min="0" max="10" placeholder="2">
+                </label>
+                <label class="q-ty-form">
+                  <p class="form-text notice">Дети:
+                    <span class="tooltip">
+                      <a class="tooltip-toggle">
+                        <img class="tooltip-icon" src="img/svg/notice.svg" alt="Информация." height="20" width="20">
+                      </a>
+                      <span class="tooltip-text">
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                        размещаются бесплатно.
+                      </span>
+                    </span>
+                  </p>
+                  <input class="form-number children" type="number" name="amount" min="0" max="10" placeholder="2">
+                </label>
+              </div>
+              <button type="submit" class="form-submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 

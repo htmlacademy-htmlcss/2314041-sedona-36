@@ -141,9 +141,19 @@
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
-          <a href="#" class="button-small"><span class="visually-hidden">Маленькие картинки</span></a>
-          <a href="#" class="button-big"><span class="visually-hidden">Большие картинки</span></a>
-          <a href="#" class="button-list"><span class="visually-hidden">Список</span></a>
+          <ul class="select-list">
+            <li class="select-list-item">
+              <a href="#" class="button-small"><span class="visually-hidden">Маленькие картинки</span>
+              </a>
+            </li>
+            <li class="select-list-item"><a href="#" class="button-big"><span class="visually-hidden">Большие
+                  картинки</span>
+              </a>
+            </li>
+            <li class="select-list-item"><a href="#" class="button-list"><span class="visually-hidden">Список</span>
+              </a>
+            </li>
+          </ul>
         </div>
         <section class="catalog">
           <h2 class="visually-hidden">Список гостиниц Седоны</h2>
@@ -219,29 +229,34 @@
 
       <footer class="page-footer">
         <ul class="media">
-          <li class="media-vk">
-            <a class="media-link" href="https://vk.com/htmlacademy">
-              <img src="img/svg/vk-icon.svg" alt="Вконтакте." class="link-icon" width="50" height="40">
+          <li class="media-item">
+            <a class="media-link vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-          <li class="media-tg">
+          <li class="media-item tg">
             <a class="media-link" href="https://t.me/htmlacademy">
-              <img src="img/svg/tg-icon.svg" alt="Телеграм." class="link-icon" width="50" height="40">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
-          <li class="media-yt">
+          <li class="media-item yt">
             <a class="media-link" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="img/svg/yt-icon.svg" alt="Ютуб." class="link-icon" width="50" height="40">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
         </ul>
-        <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
-        <a href=" https://htmlacademy.ru/" class="academy-link">
-          <span class="visually-hidden">HTML Academy</span>
-        </a>
+        <ul class="phone">
+          <li class="phone-item">
+            <a href="tel:+78128121212" class="phone-link">+7 (812) 812-12-12</a>
+          </li>
+        </ul>
+        <ul class="academy">
+          <li class="academy-item">
+            <a href=" https://htmlacademy.ru/" class="academy-link">
+              <span class="visually-hidden">HTML Academy</span>
+            </a>
+          </li>
+        </ul>
       </footer>
       <div class="modal-container modal-container-close">
         <div class="modal">
@@ -277,8 +292,10 @@
                       <img class="tooltip-icon" src="img/svg/notice.svg" alt="Информация." height="20" width="20">
                     </a>
                     <span class="tooltip-text">
-                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-                      размещаются бесплатно.
+                      Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br>
+                      до 6
+                      лет
+                      размещаются<br> бесплатно.
                     </span>
                   </span>
                   <input class="form-number children" type="number" name="amount" min="0" max="10" placeholder="2">

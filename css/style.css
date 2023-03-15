@@ -1567,6 +1567,10 @@ body {
   background: rgba(255, 255, 255, 0.8);
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
